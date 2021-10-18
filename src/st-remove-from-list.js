@@ -1,5 +1,5 @@
 module.exports = function removeKFromList(list, k) {
-  while (list?.value === k) list = list.next;
+  while (list.value && list.value === k) list = list.next;
 
   const head = list;
   let node = head;
