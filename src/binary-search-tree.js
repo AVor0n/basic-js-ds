@@ -6,8 +6,11 @@ Node = class {
     this.right = null;
   }
 };
-module.exports = class BinarySearchTree {
-  // class BinarySearchTree {
+/**
+* Implement simple binary search tree according to task description
+* using Node from extensions
+*/
+class BinarySearchTree {
   constructor() {
     this._root = null;
   }
@@ -127,4 +130,7 @@ module.exports = class BinarySearchTree {
       return node.data;
     }
   }
-};
+}
+module.exports = {
+  BinarySearchTree
+}

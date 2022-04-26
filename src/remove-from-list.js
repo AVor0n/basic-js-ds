@@ -1,4 +1,4 @@
-module.exports = function removeKFromList(list, k) {
+function removeKFromList(list, k) {
   while (list.value && list.value === k) list = list.next;
 
   const head = list;
@@ -11,3 +11,7 @@ module.exports = function removeKFromList(list, k) {
 
   return head;
 };
+
+module.exports = {
+  removeKFromList
+}
